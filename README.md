@@ -13,3 +13,7 @@ npm i eosjs-ecc
 node main.js
 ```
 
+```shell=
+python3 account_generator.py --user-limit 100
+```
+

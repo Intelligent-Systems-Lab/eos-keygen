@@ -4,7 +4,8 @@ from tqdm import tqdm
 
 import argparse
 import json
-import numpy
+#import numpy
+
 
 #result = os.system('node ../main.js')
 #result = os.popen('node ../main.js').read()

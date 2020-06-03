@@ -1,6 +1,6 @@
 # eos-keygen
 
-we use it in node 10
+we use it in nodejs 10
 
 ## Install 
 
@@ -14,6 +14,7 @@ node main.js
 ```
 
 ```shell=
-python3 account_generator.py --user-limit 100
+cd eos-keygen/python
+python3 account_generator.py --user-limit 50 --save-path ./account_50.json
 ```
 

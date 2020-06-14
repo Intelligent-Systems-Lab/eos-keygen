@@ -2,7 +2,7 @@
 
 Run example in colab 👇👇
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/Intelligent-Systems-Lab/eos-keygen/tree/master/python/eos_keygen_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Intelligent-Systems-Lab/eos-keygen/blob/master/python/eos_keygen_demo.ipynb)
 
 we use it in nodejs 10
 

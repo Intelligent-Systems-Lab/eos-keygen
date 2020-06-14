@@ -56,7 +56,7 @@ for i in range(args.user_limit):
 
     storage_txt.append("user"+str('{0:04}'.format(i))+"_name="+name+'\n')
     storage_txt.append("user"+str('{0:04}'.format(i))+"_pvt="+k[0]+'\n')
-    storage_txt.append("user"+str('{0:04}'.format(i))+"_pub="+k[0]+'\n')
+    storage_txt.append("user"+str('{0:04}'.format(i))+"_pub="+k[1]+'\n')
 
     pbar.update()
     

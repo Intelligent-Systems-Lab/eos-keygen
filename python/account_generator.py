@@ -1,7 +1,7 @@
 import sys
 import os
 from tqdm import tqdm
-
+import random
 import argparse
 import json
 #import numpy
@@ -9,6 +9,8 @@ import json
 
 #result = os.system('node ../main.js')
 #result = os.popen('node ../main.js').read()
+
+symbols = '12345abcdefghijklmnopqrstuvwxyz'
 
 parser = argparse.ArgumentParser()
 
@@ -40,7 +42,11 @@ for i in range(args.user_limit):
     #if i%2==0: print("Generate : ",i,"/",args.user_limit)
     k = os.popen('node ../main.js').read()
     k = k.splitlines()
-    name = "user"+str('{0:08}'.format(i))
+    #name = "user"+str('{0:08}'.format(i))
+    name = "user"
+    while(len(name)<12):
+        name += symbols[random.randint(0,len(symbols)-1)]
+
     if (i<30):
         storage['producers'].append({"name":name, "pvt":k[0], "pub":k[1]})
     else:

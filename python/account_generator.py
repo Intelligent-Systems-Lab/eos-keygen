@@ -28,6 +28,8 @@ storage = {
     "users": [
     ]
 }
+
+storage_txt = []
 # storage['producers'].append({"name":"132", "pvt":"132", "pub":"123"})
 ########################################
 
@@ -51,6 +53,11 @@ for i in range(args.user_limit):
         storage['producers'].append({"name":name, "pvt":k[0], "pub":k[1]})
     else:
         storage['users'].append({"name":name, "pvt":k[0], "pub":k[1]})
+
+    storage_txt.append("user"+str('{0:04}'.format(i))+"_name="+name+'\n')
+    storage_txt.append("user"+str('{0:04}'.format(i))+"_pvt="+k[0]+'\n')
+    storage_txt.append("user"+str('{0:04}'.format(i))+"_pub="+k[0]+'\n')
+
     pbar.update()
     
 pbar.close()
@@ -58,6 +65,10 @@ pbar.close()
 DataFile = open(args.save_path, "w")
 DataFile.write(json.dumps(storage, indent=4, sort_keys=True))
 DataFile.close()
+
+fp = open(args.save_path.replace(".json",".txt"), "a")
+fp.writelines(storage_txt)
+fp.close()
 #re = result.splitlines()
 
 #print("Result:", keys)

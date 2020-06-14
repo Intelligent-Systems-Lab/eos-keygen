@@ -1,6 +1,8 @@
 # eos-keygen
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/https://github.com/Intelligent-Systems-Lab/eos-keygen/tree/master/python/eos_keygen_demo.ipynb)
+Run example in colab 👇👇
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/Intelligent-Systems-Lab/eos-keygen/tree/master/python/eos_keygen_demo.ipynb)
 
 we use it in nodejs 10
 

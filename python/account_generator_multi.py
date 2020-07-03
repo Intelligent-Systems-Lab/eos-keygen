@@ -33,11 +33,10 @@ def work(i):
     return outs.decode('utf-8').splitlines()
 
 
-def show(*a):
-    #print("Callback: {} PID: {}".format(get_result, os.getpid()))
+def show(get_result):
     # for i in get_result:
     #     print(i)
-    pbar.update()
+    pass
 
 
 
@@ -61,7 +60,7 @@ if __name__ == '__main__':
         remain = results._number_left
         pbar.update(pb_pre-remain)
         pb_pre = remain
-        #print("Remaining : ",remaining)
+        
         time.sleep(0.5)
     pool.close()
     pool.join()

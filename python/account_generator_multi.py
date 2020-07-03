@@ -23,7 +23,7 @@ storage_txt = []
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--user-limit', metavar='', help="Number of users", type=int, default=100)
-parser.add_argument('--cores', metavar='', help="Number of cores", type=int, default=2)
+parser.add_argument('--numproc', metavar='', help="Number of cores", type=int, default=2)
 parser.add_argument('--save-path', metavar='', help="Path to save keys file", default='./accounts.json')
 
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
         print("Please set more user.")
         exit()
 
-    pool = Pool(args.cores)
+    pool = Pool(args.numproc)
 
     pbar = tqdm(total=args.user_limit)
     pb_pre = args.user_limit
